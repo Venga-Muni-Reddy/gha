@@ -6,15 +6,3 @@ jobs:
       steps:
         - name: Build Phase
           run: echo "Building phase"
-    test:
-        runs-on: ubuntu-latest
-        needs: build
-        steps:
-          - name: Test phase
-            run: echo "Running phase"
-    deploy:
-        runs-on: ubuntu-latest
-        needs: test
-        steps:
-          - name: Deploy phasae
-            run: echo "Deployment phase"
